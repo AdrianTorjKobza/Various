@@ -2,15 +2,11 @@
 
 An interactive HTML checklist covering all risk tiers of the **EU AI Act (Regulation 2024/1689)**. No dependencies, just open the `compliance_checklist_extended.html` file in a browser.
 
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Regulation](https://img.shields.io/badge/Regulation-EU%202024%2F1689-003399)
-![In force](https://img.shields.io/badge/In%20force-August%202024-green)
-
 ---
 
 ## What is the EU AI Act?
 
-The EU AI Act is the world's first comprehensive AI regulation. It applies to any organisation that builds, deploys, imports, or distributes AI systems in the EU — or whose AI outputs affect people in the EU — regardless of where the organisation is based.
+The EU AI Act is the world's first comprehensive AI regulation. It applies to any organisation that builds, deploys, imports, or distributes AI systems in the EU (or whose AI outputs affect people in the EU), regardless of where the organisation is based.
 
 This checklist helps developers, legal teams, and executives work through their obligations in plain language, track progress with a live compliance score, and export a summary report for stakeholders.
 
@@ -33,7 +29,7 @@ This checklist helps developers, legal teams, and executives work through their 
 
 1. Download `eu-ai-act-checklist.html` from this repository
 2. Open it in any modern browser (Chrome, Firefox, Safari, Edge)
-3. Start ticking items — your progress is saved automatically in your browser
+3. Start ticking items; your progress is saved automatically in your browser
 
 ---
 
@@ -53,9 +49,9 @@ This checklist helps developers, legal teams, and executives work through their 
 
 | Role | How to use it |
 |------|--------------|
-| **Developers** | Filter to the Developer view to see technical build requirements — data governance, logging, robustness, documentation |
+| **Developers** | Filter to the Developer view to see technical build requirements: data governance, logging, robustness, documentation |
 | **Legal teams** | Filter to the Legal view to track conformity assessments, registrations, and reporting obligations |
-| **Executives** | Filter to the Executive view to understand strategic obligations — risk classification, governance, incident reporting |
+| **Executives** | Filter to the Executive view to understand strategic obligations: risk classification, governance, incident reporting |
 | **All** | Use the default All view for a complete picture before assigning ownership of individual items |
 
 ---
@@ -78,23 +74,6 @@ This checklist helps developers, legal teams, and executives work through their 
 - [European Commission AI Policy Hub](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)
 - [EU AI Act implementation timeline](https://artificialintelligenceact.eu/implementation-timeline/)
 - [EU AI Office](https://digital-strategy.ec.europa.eu/en/policies/ai-office)
-
----
-
-## Disclaimer
-
-This checklist is provided for **informational purposes only** and does not constitute legal advice. Compliance with the EU AI Act depends on your specific system, use case, and jurisdiction. Consult a qualified legal professional before making compliance decisions.
-
----
-
-## Contributing
-
-Contributions are welcome. If obligations change as implementing acts and harmonised standards are published, please open a pull request with the updated item and a reference to the relevant official source.
-
-1. Fork the repository
-2. Create a branch: `git checkout -b update/article-reference`
-3. Make your changes to `eu-ai-act-checklist.html`
-4. Open a pull request with a brief description and source link
 
 ---
 
