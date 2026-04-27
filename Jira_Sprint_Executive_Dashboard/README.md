@@ -1,6 +1,6 @@
 # Sprint Dashboard
 
-A single-page analytics tool designed to transform Jira "CSV" exports into actionable sprint insights. This dashboard focuses on real-time health, bottleneck identification, and required velocity tracking.
+A single-page analytics tool designed to transform Jira "CSV" exports into actionable sprint insights. This dashboard focuses on real-time Sprint health, bottleneck identification, and required velocity tracking.
 
 ## Features
 
