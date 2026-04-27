@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EU AI Act Compliance Checklist</title>
+    <style>
+        :root {
+            --primary: #003399; /* EU Blue */
+            --secondary: #ffcc00; /* EU Yellow */
+            --danger: #d9534f;
+            --success: #5cb85c;
+            --bg: #f4f7f6;
+            --text: #333;
+        }
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 0; }
+        .container { max-width: 1000px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        
+        header { border-bottom: 3px solid var(--primary); margin-bottom: 2rem; padding-bottom: 1rem; }
+        h1 { color: var(--primary); margin: 0; }
+        .official-link { color: var(--primary); font-weight: bold; text-decoration: underline; }
+        
+        .summary-box { background: #eef2f7; padding: 1.5rem; border-left: 5px solid var(--primary); margin-bottom: 2rem; }
+        
+        .score-card { position: sticky; top: 10px; background: var(--primary); color: white; padding: 1.5rem; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; z-index: 100; margin-bottom: 2rem; }
+        .score-circle { font-size: 2.5rem; font-weight: bold; color: var(--secondary); }
+
+        .section-header { background: #eee; padding: 10px; margin-top: 2rem; border-radius: 4px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        
+        .check-item { display: grid; grid-template-columns: 50px 1fr 120px; gap: 15px; padding: 1rem; border-bottom: 1px solid #ddd; align-items: center; }
+        .check-item:hover { background: #fafafa; }
+        .check-item.prohibited { border-left: 4px solid var(--danger); }
+        
+        .label-tag { font-size: 0.7rem; padding: 2px 6px; border-radius: 4px; background: #ddd; color: #555; margin-right: 5px; }
+        .tag-provider { background: #d1ecf1; color: #0c5460; }
+        .tag-deployer { background: #fff3cd; color: #856404; }
+
+        .status-btn { padding: 8px; border: 1px solid #ccc; border-radius: 4px; cursor: pointer; background: white; width: 100%; }
+        .status-btn.checked { background: var(--success); color: white; border-color: var(--success); }
+        .status-btn.fail { background: var(--danger); color: white; border-color: var(--danger); }
+
+        .critical-warning { background: var(--danger); color: white; padding: 1rem; margin-top: 1rem; display: none; border-radius: 4px; font-weight: bold; text-align: center; }
+        
+        footer { margin-top: 3rem; font-size: 0.8rem; text-align: center; color: #777; }
+        
+        @media print {
+            .score-card { position: static; color: black; border: 1px solid #000; }
+            .status-btn { border: 1px solid #000; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>AI Compliance Auditor</h1>
+        <p>EU AI Act (Regulation (EU) 2024/1689) Readiness Checklist</p>
+    </header>
+
+    <div class="summary-box">
+        <h3>Act Summary</h3>
+        <p>The EU AI Act is the world's first comprehensive horizontal legal framework for AI. It follows a <strong>risk-based approach</strong>, imposing stricter rules on systems with higher potential to harm society. The Act applies to <strong>Providers</strong> (developers) and <strong>Deployers</strong> (users) of AI systems in the EU market.</p>
+        <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689" target="_blank" class="official-link">Official Documentation: Regulation (EU) 2024/1689</a>
+    </div>
+
+    <div class="score-card" id="scoreCard">
+        <div>
+            <div style="font-size: 1.2rem;">Compliance Readiness Score</div>
+            <small id="scoreDetails">Fill the checklist to calculate</small>
+        </div>
+        <div class="score-circle" id="totalScore">0%</div>
+    </div>
+    
+    <div id="criticalWarning" class="critical-warning">
+        CRITICAL FAILURE: This AI system utilizes a PROHIBITED practice. It cannot be legally operated in the EU.
+    </div>
+
+    <div id="checklist-container">
+        <div class="section-header">1. Prohibited AI Practices (Article 5)</div>
+        <div class="check-item prohibited" data-weight="0" data-type="prohibited">
+            <span>#</span>
+            <div>
+                <strong>Cognitive Behavioral Manipulation</strong><br>
+                <small>Does the system use subliminal techniques to distort behavior causing physical/psychological harm?</small>
+                <div><span class="label-tag tag-provider">Provider</span><span class="label-tag tag-deployer">Deployer</span></div>
+            </div>
+            <button class="status-btn" onclick="toggleStatus(this, true)">Used?</button>
+        </div>
+        <div class="check-item prohibited" data-weight="0" data-type="prohibited">
+            <span>#</span>
+            <div>
+                <strong>Social Scoring</strong><br>
+                <small>Does the system evaluate trustworthiness based on social behavior or personality traits leading to detrimental treatment?</small>
+                <div><span class="label-tag tag-provider">Provider</span><span class="label-tag tag-deployer">Deployer</span></div>
+            </div>
+            <button class="status-btn" onclick="toggleStatus(this, true)">Used?</button>
+        </div>
+
+        <div class="section-header">2. High-Risk Obligations (Articles 8-17 & 26)</div>
+        <div class="check-item" data-weight="3" data-type="standard">
+            <span>#</span>
+            <div>
+                <strong>Risk Management System (Art 9)</strong><br>
+                <small>Is there a continuous iterative process for identifying and mitigating risks throughout the lifecycle?</small>
+                <div><span class="label-tag tag-provider">Provider</span></div>
+            </div>
+            <button class="status-btn" onclick="toggleStatus(this)">Compliant</button>
+        </div>
+        <div class="check-item" data-weight="3" data-type="standard">
+            <span>#</span>
+            <div>
+                <strong>Data Governance (Art 10)</strong><br>
+                <small>Are training, validation, and testing datasets relevant, representative, and free of errors?</small>
+                <div><span class="label-tag tag-provider">Provider</span></div>
+            </div>
+            <button class="status-btn" onclick="toggleStatus(this)">Compliant</button>
+        </div>
+        <div class="check-item" data-weight="3" data-type="standard">
+            <span>#</span>
+            <div>
+                <strong>Human Oversight (Art 14)</strong><br>
+                <small>Can the system be effectively overseen by natural persons during the period in use?</small>
+                <div><span class="label-tag tag-provider">Provider</span><span class="label-tag tag-deployer">Deployer</span></div>
+            </div>
+            <button class="status-btn" onclick="toggleStatus(this)">Compliant</button>
+        </div>
+
+        <div class="section-header">3. General Purpose AI (GPAI) Models (Art 51-55)</div>
+        <div class="check-item" data-weight="1" data-type="standard">
+            <span>#</span>
+            <div>
+                <strong>Technical Documentation (Art 53)</strong><br>
+                <small>Is technical documentation maintained, including training/testing processes and evaluation results?</small>
+                <div><span class="label-tag tag-provider">Provider</span></div>
+            </div>
+            <button class="status-btn" onclick="toggleStatus(this)">Compliant</button>
+        </div>
+        <div class="check-item" data-weight="1" data-type="standard">
+            <span>#</span>
+            <div>
+                <strong>Copyright Policy</strong><br>
+                <small>Is there a policy to respect Union copyright law and a summary of content used for training?</small>
+                <div><span class="label-tag tag-provider">Provider</span></div>
+            </div>
+            <button class="status-btn" onclick="toggleStatus(this)">Compliant</button>
+        </div>
+
+        <div class="section-header">4. Transparency Obligations (Art 50)</div>
+        <div class="check-item" data-weight="1" data-type="standard">
+            <span>#</span>
+            <div>
+                <strong>AI Disclosure</strong><br>
+                <small>Are natural persons informed they are interacting with an AI system (unless obvious)?</small>
+                <div><span class="label-tag tag-deployer">Deployer</span></div>
+            </div>
+            <button class="status-btn" onclick="toggleStatus(this)">Compliant</button>
+        </div>
+    </div>
+
+    <div style="margin-top: 2rem; display: flex; gap: 10px;">
+        <button onclick="clearAll()" style="background: #999; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Reset Checklist</button>
+        <button onclick="window.print()" style="background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">Download/Print PDF</button>
+    </div>
+
+    <footer>
+        No Data Leaves This Browser (Local Execution Only)
+    </footer>
+</div>
+
+<script>
+    function toggleStatus(btn, isProhibited = false) {
+        if (isProhibited) {
+            btn.classList.toggle('fail');
+            btn.innerText = btn.classList.contains('fail') ? 'FAIL' : 'Used?';
+        } else {
+            btn.classList.toggle('checked');
+            btn.innerText = btn.classList.contains('checked') ? 'YES' : 'Compliant';
+        }
+        calculateScore();
+        saveProgress();
+    }
+
+    function calculateScore() {
+        const items = document.querySelectorAll('.check-item');
+        const warning = document.getElementById('criticalWarning');
+        let totalWeight = 0;
+        let earnedWeight = 0;
+        let prohibitedFound = false;
+
+        items.forEach(item => {
+            const btn = item.querySelector('.status-btn');
+            const type = item.getAttribute('data-type');
+            const weight = parseInt(item.getAttribute('data-weight'));
+
+            if (type === 'prohibited') {
+                if (btn.classList.contains('fail')) prohibitedFound = true;
+            } else {
+                totalWeight += weight;
+                if (btn.classList.contains('checked')) earnedWeight += weight;
+            }
+        });
+
+        const scoreCircle = document.getElementById('totalScore');
+        const scoreDetails = document.getElementById('scoreDetails');
+
+        if (prohibitedFound) {
+            scoreCircle.innerText = "0%";
+            scoreCircle.style.color = "var(--danger)";
+            warning.style.display = 'block';
+            scoreDetails.innerText = "Compliance blocked by Prohibited Practices";
+        } else {
+            const finalScore = totalWeight > 0 ? Math.round((earnedWeight / totalWeight) * 100) : 0;
+            scoreCircle.innerText = finalScore + "%";
+            scoreCircle.style.color = "var(--secondary)";
+            warning.style.display = 'none';
+            scoreDetails.innerText = `Weighted score based on obligations (${earnedWeight}/${totalWeight})`;
+        }
+    }
+
+    function saveProgress() {
+        const statuses = Array.from(document.querySelectorAll('.status-btn')).map(btn => ({
+            checked: btn.classList.contains('checked'),
+            fail: btn.classList.contains('fail')
+        }));
+        localStorage.setItem('protos_ai_checklist', JSON.stringify(statuses));
+    }
+
+    function loadProgress() {
+        const saved = JSON.parse(localStorage.getItem('protos_ai_checklist'));
+        if (saved) {
+            const btns = document.querySelectorAll('.status-btn');
+            saved.forEach((state, i) => {
+                if (state.checked) {
+                    btns[i].classList.add('checked');
+                    btns[i].innerText = 'YES';
+                }
+                if (state.fail) {
+                    btns[i].classList.add('fail');
+                    btns[i].innerText = 'FAIL';
+                }
+            });
+            calculateScore();
+        }
+    }
+
+    function clearAll() {
+        if(confirm("Are you sure you want to reset all progress?")) {
+            localStorage.removeItem('protos_ai_checklist');
+            location.reload();
+        }
+    }
+
+    window.onload = loadProgress;
+</script>
+
+</body>
+</html>
