@@ -14,14 +14,14 @@ This checklist helps developers, legal teams, and executives work through their 
 
 - **Live compliance score** (0–100%) with a progress ring that updates as you tick items
 - **8 sections, 43 checklist items** covering all risk tiers and roles
-- **Audience filter** — toggle between Developer, Legal, and Executive views
-- **N/A toggle** on every item — marks it out of scope without affecting your score
+- **Audience filter** - toggle between Developer, Legal, and Executive views
+- **N/A toggle** on every item - marks it out of scope without affecting your score
 - **Per-section progress bars** so you can see where the gaps are at a glance
-- **Progress saved to localStorage** — survives page refreshes
-- **Copy summary report** — one click to copy a plain-text snapshot of your status
-- **Print / Save as PDF** — clean print stylesheet hides interactive controls
-- **Links to official documentation** — EUR-Lex full text and EC AI Policy Hub
-- **Single HTML file** — no npm, no bundler, no server required
+- **Progress saved to localStorage** - survives page refreshes
+- **Copy summary report** - one click to copy a plain-text snapshot of your status
+- **Print / Save as PDF** - clean print stylesheet hides interactive controls
+- **Links to official documentation** - EUR-Lex full text and EC AI Policy Hub
+- **Single HTML file** - no npm, no bundler, no server required
 
 ---
 
