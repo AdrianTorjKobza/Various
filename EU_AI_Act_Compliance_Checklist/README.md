@@ -1,4 +1,4 @@
-# EU AI Act — Compliance Checklist
+# EU AI Act Compliance Checklist
 
 An interactive HTML checklist covering all risk tiers of the **EU AI Act (Regulation 2024/1689)**. No dependencies, just open the `compliance_checklist_extended.html` file in a browser.
 
