@@ -1,0 +1,31 @@
+Summary,Issue key,Issue id,Parent id,Issue Type,Status,Project key,Project name,Project type,Project lead,Priority,Resolution,Assignee,Reporter,Creator,Created
+Summary1,Key1,100,200,Bug,Done,KEY,Project Name1,software,Leader,High,Done,Alex,Ana,Dave,4/22/2026 11:16
+Summary2,Key2,101,201,Bug,Done,KEY,Project Name2,software,Leader,High,Done,Dorian,Ana,Dave,4/21/2026 11:45
+Summary3,Key3,102,202,Task,Under Review,KEY,Project Name3,software,Leader,Medium,,Sarah,Ana,Dave,4/21/2026 10:09
+Summary4,Key4,103,203,Sub-task,To Do,KEY,Project Name4,software,Leader,High,,Sarah,Ana,Dave,4/20/2026 12:28
+Summary5,Key5,104,204,Sub-task,Under Review,KEY,Project Name5,software,Leader,High,,Anna,Ana,Dave,4/20/2026 12:21
+Summary6,Key6,105,205,Sub-task,Blocked,KEY,Project Name6,software,Leader,High,,Kate,Ana,Dave,4/20/2026 12:20
+Summary7,Key7,106,206,Sub-task,Under Review,KEY,Project Name7,software,Leader,High,,Kate,Ana,Dave,4/20/2026 12:13
+Summary8,Key8,107,207,Story,In Progress,KEY,Project Name8,software,Leader,High,,Alex,Ana,Dave,4/19/2026 23:47
+Summary9,Key9,108,208,Story,In Progress,KEY,Project Name9,software,Leader,High,,George,Ana,Dave,4/19/2026 23:43
+Summary10,Key10,109,209,Story,In Progress,KEY,Project Name10,software,Leader,High,,George,Ana,Dave,4/19/2026 23:35
+Summary11,Key11,110,210,Story,To Do,KEY,Project Name11,software,Leader,High,,Kate,Ana,Dave,4/19/2026 18:17
+Summary12,Key12,111,211,Story,To Do,KEY,Project Name12,software,Leader,High,,Alex,Ana,Dave,4/19/2026 17:55
+Summary13,Key13,112,212,Bug,Done,KEY,Project Name13,software,Leader,High,Done,Alex,Ana,Dave,4/17/2026 9:59
+Summary14,Key14,113,213,Sub-task,Done,KEY,Project Name14,software,Leader,High,Done,Dorian,Ana,Dave,4/15/2026 13:31
+Summary15,Key15,114,214,Story,To Do,KEY,Project Name15,software,Leader,High,,Dave,Ana,Dave,4/14/2026 18:36
+Summary16,Key16,115,215,Story,In Progress,KEY,Project Name16,software,Leader,High,,Dave,Ana,Dave,4/14/2026 18:33
+Summary17,Key17,116,216,Story,To Do,KEY,Project Name17,software,Leader,High,,Dave,Ana,Dave,4/14/2026 18:32
+Summary18,Key18,117,217,Story,In Progress,KEY,Project Name18,software,Leader,High,,Victor,Ana,Dave,4/14/2026 18:30
+Summary19,Key19,118,218,Bug,To Do,KEY,Project Name19,software,Leader,High,,Victor,Ana,Dave,4/14/2026 17:49
+Summary20,Key20,119,219,Sub-task,Done,KEY,Project Name20,software,Leader,High,Done,Julia,Ana,Dave,4/14/2026 10:34
+Summary21,Key21,120,220,Sub-task,Done,KEY,Project Name21,software,Leader,High,Done,Julia,Ana,Dave,4/8/2026 11:06
+Summary22,Key22,121,221,Story,In Progress,KEY,Project Name22,software,Leader,High,,Maria,Ana,Dave,4/8/2026 9:52
+Summary23,Key23,122,222,Sub-task,In Progress,KEY,Project Name23,software,Leader,High,,Maria,Ana,Dave,4/7/2026 21:14
+Summary24,Key24,123,223,Sub-task,Done,KEY,Project Name24,software,Leader,High,Done,Maria,Ana,Dave,4/7/2026 21:13
+Summary25,Key25,124,224,Sub-task,Done,KEY,Project Name25,software,Leader,High,Done,Maria,Ana,Dave,4/2/2026 17:16
+Summary26,Key26,125,225,Sub-task,Ready for Test,KEY,Project Name26,software,Leader,High,,Victor,Ana,Dave,4/2/2026 17:15
+Summary27,Key27,126,226,Story,Ready for Test,KEY,Project Name27,software,Leader,High,,Alan,Ana,Dave,4/2/2026 17:10
+Summary28,Key28,127,227,Story,Need Testing,KEY,Project Name28,software,Leader,High,,Alan,Ana,Dave,4/2/2026 17:06
+Summary29,Key29,128,228,Sub-task,In Progress,KEY,Project Name29,software,Leader,High,,Victoria,Ana,Dave,4/2/2026 16:20
+Entity 360 Agent,Key30,129,229,Story,Ready for Test,KEY,Project Name30,software,Leader,High,,Adrian,Ana,Dave,4/2/2026 16:19
