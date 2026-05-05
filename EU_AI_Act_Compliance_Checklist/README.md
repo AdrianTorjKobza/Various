@@ -79,4 +79,4 @@ This checklist helps developers, legal teams, and executives work through their 
 
 ## License
 
-MIT — free to use, adapt, and distribute with attribution.
+MIT - free to use, adapt, and distribute with attribution.
