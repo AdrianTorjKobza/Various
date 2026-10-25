@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Overlap Cities – drag one city over another to compare their true size, city limits and metro areas." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:title" content="Overlap Cities" />
+    <meta property="og:description" content="Compare the true size of cities by overlapping them." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Overlap Cities – compare the true size of cities</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#panel-body">Skip to controls</a>
+    <div class="app">
+      <main class="map-area">
+        <div id="map" class="map" role="application" aria-label="Map with the two city outlines. Drag a city to move it."></div>
+        <div id="legend" class="legend" aria-hidden="true"></div>
+        <p id="status" class="status" role="alert" hidden></p>
+      </main>
+
+      <aside id="panel" class="panel" aria-label="Comparison controls">
+        <header class="panel-header">
+          <div class="brand">
+            <img src="/favicon.svg" alt="" width="32" height="32" />
+            <div>
+              <h1>Overlap Cities</h1>
+              <p>Compare the true size of cities (300k+)</p>
+            </div>
+          </div>
+          <button id="sheet-toggle" class="btn sheet-toggle" type="button" aria-expanded="true" aria-controls="panel-body">Less</button>
+        </header>
+
+        <div id="panel-body" class="panel-body">
+          <section class="pickers" aria-label="Cities">
+            <div id="picker-a" class="picker-field"></div>
+            <div id="picker-b" class="picker-field"></div>
+          </section>
+          <section id="controls" class="section collapsible"></section>
+          <section id="comparison" class="section collapsible"></section>
+          <section id="city-info" class="section collapsible"></section>
+          <footer class="panel-footer collapsible">
+            <button id="about-open" class="link-button" type="button">About &amp; data sources</button>
+          </footer>
+        </div>
+      </aside>
+    </div>
+
+    <dialog id="about" class="dialog" aria-labelledby="about-title">
+      <h2 id="about-title">About Overlap Cities</h2>
+      <p>Outlines keep their real-world size wherever you drag them: each city is re-projected around its new position, so the comparison stays accurate even when moving between the equator and high latitudes.</p>
+      <h3>Which cities are included</h3>
+      <p>Every city with 300,000+ inhabitants, plus the world's top 100 city destinations – some of which are smaller.</p>
+      <h3>How "city limits" are defined</h3>
+      <p>Normally the official city boundary. Where that boundary is province-sized or mostly rural (e.g. Beijing, Istanbul, Dubai), a narrower definition is used – such as the central districts or the urbanised part. Each city's definition is shown under City facts.</p>
+      <h3>Data sources</h3>
+      <ul>
+        <li>City limits: © <a href="https://www.openstreetmap.org/copyright" rel="noopener noreferrer" target="_blank">OpenStreetMap</a> contributors (ODbL)</li>
+        <li>Metro areas: European Commission, JRC – GHSL Functional Urban Areas (GHS-FUA R2019A)</li>
+        <li>City names, population, time zones: <a href="https://www.geonames.org/" rel="noopener noreferrer" target="_blank">GeoNames</a> (CC BY 4.0)</li>
+        <li>Weather and climate: <a href="https://open-meteo.com/" rel="noopener noreferrer" target="_blank">Open-Meteo</a> (CC BY 4.0)</li>
+        <li>Top destinations: Euromonitor International, Top 100 City Destinations Index 2025</li>
+      </ul>
+      <h3>Privacy</h3>
+      <p>No accounts, no cookies, no tracking. Your last two cities are stored only in this browser. To show the weather, a city's coordinates (never anything about you) are sent to Open-Meteo.</p>
+      <button id="about-close" class="btn btn-primary" type="button">Close</button>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <noscript><p class="status">Overlap Cities needs JavaScript to draw the map.</p></noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

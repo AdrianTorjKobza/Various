@@ -1,0 +1,101 @@
+rank,id,name,country_code,geonames_query,osm_query,osm_parts,clip_to_metro,expected_km2,boundary_note,geonames_id,osm_id,rank_source
+1,paris,Paris,FR,Paris,"Paris, France",,,105,,,,Euromonitor 2025 via press republication
+2,madrid,Madrid,ES,Madrid,,,,604,,,,Euromonitor 2025 via press republication
+3,tokyo,Tokyo,JP,Tokyo,,"Chiyoda, Tokyo|Chūō, Tokyo|Minato, Tokyo|Shinjuku, Tokyo|Bunkyō, Tokyo|Taitō, Tokyo|Sumida, Tokyo|Kōtō, Tokyo|Shinagawa, Tokyo|Meguro, Tokyo|Ōta, Tokyo|Setagaya, Tokyo|Shibuya, Tokyo|Nakano, Tokyo|Suginami, Tokyo|Toshima, Tokyo|Kita, Tokyo|Arakawa, Tokyo|Itabashi, Tokyo|Nerima, Tokyo|Adachi, Tokyo|Katsushika, Tokyo|Edogawa, Tokyo",,627,23 special wards (excludes the Tama area and outlying islands),,,Euromonitor 2025 via press republication
+4,rome,Rome,IT,Rome,"Roma, Italia",,,,,,,Euromonitor 2025 via press republication
+5,milan,Milan,IT,Milan,"Milano, Italia",,,,,,,Euromonitor 2025 via press republication
+6,new-york,New York,US,New York City,"New York City, New York",,,,,,,Euromonitor 2025 via press republication
+7,amsterdam,Amsterdam,NL,Amsterdam,,,,,,,,Euromonitor 2025 via press republication
+8,barcelona,Barcelona,ES,Barcelona,,,,,,,,Euromonitor 2025 via press republication
+9,singapore,Singapore,SG,Singapore,Singapore,,,,,,,Euromonitor 2025 via press republication
+10,seoul,Seoul,KR,Seoul,,,,,,,,Euromonitor 2025 via press republication
+11,osaka,Osaka,JP,Osaka,Osaka City,,,,,,,Euromonitor 2025 via press republication
+12,dubai,Dubai,AE,Dubai,,,yes,,Urbanised part of the Emirate of Dubai (excludes desert and Hatta),,,Euromonitor 2025 via press republication
+13,los-angeles,Los Angeles,US,Los Angeles,"Los Angeles, California",,,,,,,Euromonitor 2025 via press republication
+14,istanbul,Istanbul,TR,Istanbul,,,yes,,Urbanised part of the metropolitan municipality (which covers the whole province),,,Euromonitor 2025 via press republication
+15,taipei,Taipei,TW,Taipei,,,,,,,,Euromonitor 2025 via press republication
+16,berlin,Berlin,DE,Berlin,,,,,,,,Euromonitor 2025 via press republication
+17,hong-kong,Hong Kong,HK,Hong Kong,Hong Kong,,,,"Whole SAR, incl. the New Territories and outlying islands",,,Euromonitor 2025 via press republication
+18,london,London,GB,London,Greater London,,,1572,Greater London,,,Euromonitor 2025 via press republication
+19,kyoto,Kyoto,JP,Kyoto,Kyoto City,,,,,,,Euromonitor 2025 via press republication
+20,bangkok,Bangkok,TH,Bangkok,,,,,,,,Euromonitor 2025 via press republication
+21,orlando,Orlando,US,Orlando,"Orlando, Florida",,,,,,,Euromonitor 2025 via press republication
+22,munich,Munich,DE,Munich,München,,,,,,,Euromonitor 2025 via press republication
+23,florence,Florence,IT,Florence,"Firenze, Italia",,,,,,,Euromonitor 2025 via press republication
+24,kuala-lumpur,Kuala Lumpur,MY,Kuala Lumpur,,,,,,,,Euromonitor 2025 via press republication
+25,athens,Athens,GR,Athens,Municipality of Athens,,,,,,,Euromonitor 2025 via press republication
+26,lisbon,Lisbon,PT,Lisbon,"Lisboa, Portugal",,,,,,,Euromonitor 2025 via press republication
+27,las-vegas,Las Vegas,US,Las Vegas,"Las Vegas, Nevada",,,,,,,Euromonitor 2025 via press republication
+28,sydney,Sydney,AU,Sydney,"Sydney, New South Wales",,,,City of Sydney council area; turn on metro area for Greater Sydney,,,Euromonitor 2025 via press republication
+29,melbourne,Melbourne,AU,Melbourne,"Melbourne, Victoria",,,,City of Melbourne council area; turn on metro area for Greater Melbourne,,,Euromonitor 2025 via press republication
+30,venice,Venice,IT,Venice,"Venezia, Italia",,,,"Comune of Venice, incl. Mestre and lagoon waters",,,Euromonitor 2025 via press republication
+31,vienna,Vienna,AT,Vienna,Wien,,,,,,,Euromonitor 2025 via press republication
+32,prague,Prague,CZ,Prague,Praha,,,,,,,Euromonitor 2025 via press republication
+33,dublin,Dublin,IE,Dublin,Dublin City,,,,,,,Euromonitor 2025 via press republication
+34,shanghai,Shanghai,CN,Shanghai,,"Huangpu District, Shanghai|Xuhui District, Shanghai|Changning District, Shanghai|Jing'an District, Shanghai|Putuo District, Shanghai|Hongkou District, Shanghai|Yangpu District, Shanghai|Pudong New Area, Shanghai",,,Seven central Puxi districts plus Pudong New Area,,,Euromonitor 2025 via press republication
+35,san-francisco,San Francisco,US,San Francisco,"San Francisco, California",,,,,,,Euromonitor 2025 via press republication
+36,miami,Miami,US,Miami,"Miami, Florida",,,,,,,Euromonitor 2025 via press republication
+37,frankfurt,Frankfurt,DE,Frankfurt am Main,Frankfurt am Main,,,,,,,Euromonitor 2025 via press republication
+38,copenhagen,Copenhagen,DK,Copenhagen,København Kommune,,,,,,,Euromonitor 2025 via press republication
+39,toronto,Toronto,CA,Toronto,"Toronto, Ontario",,,,,,,Euromonitor 2025 via press republication
+40,washington-dc,"Washington, D.C.",US,Washington,"Washington, District of Columbia",,,,,,,Euromonitor 2025 via press republication
+41,guangzhou,Guangzhou,CN,Guangzhou,,"Yuexiu District, Guangzhou|Liwan District, Guangzhou|Haizhu District, Guangzhou|Tianhe District, Guangzhou",,,Four central urban districts,,,Euromonitor 2025 via press republication
+42,beijing,Beijing,CN,Beijing,,"Dongcheng District, Beijing|Xicheng District, Beijing|Chaoyang District, Beijing|Haidian District, Beijing|Fengtai District, Beijing|Shijingshan District, Beijing",,1381,"Six central urban districts (the municipality covers ~16,400 km²)",,,Euromonitor 2025 via press republication
+43,hamburg,Hamburg,DE,Hamburg,,,,,,,,Euromonitor 2025 via press republication
+44,sao-paulo,São Paulo,BR,São Paulo,"São Paulo, São Paulo",,,,,,,Euromonitor 2025 via press republication
+45,pattaya,Pattaya,TH,Pattaya,Pattaya,,,,,,,Euromonitor 2025 via press republication
+46,shenzhen,Shenzhen,CN,Shenzhen,,,,,Whole city (largely urbanised),,,Euromonitor 2025 via press republication
+47,phuket,Phuket,TH,Phuket,Phuket Province,,,,Phuket Island (province),,,Euromonitor 2025 via press republication
+48,antalya,Antalya,TR,Antalya,,,yes,,Urbanised part of the metropolitan municipality (which covers the whole province),,,Euromonitor 2025 via press republication
+49,palma,Palma de Mallorca,ES,Palma,"Palma, Illes Balears",,,,,,,Euromonitor 2025 via press republication
+50,sapporo,Sapporo,JP,Sapporo,,,,,,,,Euromonitor 2025 via press republication
+51,seville,Seville,ES,Sevilla,"Sevilla, España",,,,,,,Euromonitor 2025 via press republication
+52,ho-chi-minh-city,Ho Chi Minh City,VN,Ho Chi Minh City,,,yes,,Urbanised part of the city,,,Euromonitor 2025 via press republication
+53,nice,Nice,FR,Nice,"Nice, Alpes-Maritimes",,,,,,,Euromonitor 2025 via press republication
+54,mexico-city,Mexico City,MX,Mexico City,Ciudad de México,,,,"Whole federal entity, incl. its rural south",,,Euromonitor 2025 via press republication
+55,zurich,Zurich,CH,Zürich,"Zürich, Switzerland",,,,,,,Euromonitor 2025 via press republication
+56,busan,Busan,KR,Busan,,,,,,,,Euromonitor 2025 via press republication
+57,oslo,Oslo,NO,Oslo,,,,,,,,Euromonitor 2025 via press republication
+58,vancouver,Vancouver,CA,Vancouver,"Vancouver, British Columbia",,,,,,,Euromonitor 2025 via press republication
+59,brussels,Brussels,BE,Brussels,Brussels-Capital Region,,,,,,,Euromonitor 2025 via press republication
+60,budapest,Budapest,HU,Budapest,,,,,,,,Euromonitor 2025 via press republication
+61,macau,Macau,MO,Macau,Macau,,,,,,,Euromonitor 2025 via press republication
+62,valencia,Valencia,ES,Valencia,"València, España",,,,,,,Euromonitor 2025 via press republication
+63,helsinki,Helsinki,FI,Helsinki,,,,,,,,Euromonitor 2025 via press republication
+64,fukuoka,Fukuoka,JP,Fukuoka,Fukuoka City,,,,,,,Euromonitor 2025 via press republication
+65,honolulu,Honolulu,US,Honolulu,"Honolulu County, Hawaii",,yes,,Urban Honolulu (the legal city-county covers all of Oʻahu),,,Euromonitor 2025 via press republication
+66,abu-dhabi,Abu Dhabi,AE,Abu Dhabi,Abu Dhabi Emirate,,yes,,Urbanised area of Abu Dhabi city (the emirate is mostly desert),,,Euromonitor 2025 via press republication
+67,stockholm,Stockholm,SE,Stockholm,Stockholms kommun,,,,,,,Euromonitor 2025 via press republication
+68,porto,Porto,PT,Porto,"Porto, Portugal",,,,,,,UNVERIFIED - check against Euromonitor report
+69,rhodes,Rhodes,GR,Rhodes,Municipal Unit of Rhodes,,,,Rhodes town (the municipality covers the whole island),,,UNVERIFIED - check against Euromonitor report
+70,rio-de-janeiro,Rio de Janeiro,BR,Rio de Janeiro,"Rio de Janeiro, Rio de Janeiro",,,,,,,UNVERIFIED - check against Euromonitor report
+71,verona,Verona,IT,Verona,"Verona, Italia",,,,,,,UNVERIFIED - check against Euromonitor report
+72,hanoi,Hanoi,VN,Hanoi,,,yes,,Urbanised part of the city (most of the municipality is rural),,,UNVERIFIED - check against Euromonitor report
+73,doha,Doha,QA,Doha,,,,,,,,UNVERIFIED - check against Euromonitor report
+74,delhi,Delhi,IN,Delhi,"Delhi, India",,,,,,,UNVERIFIED - check against Euromonitor report
+75,bologna,Bologna,IT,Bologna,"Bologna, Italia",,,,,,,UNVERIFIED - check against Euromonitor report
+76,riyadh,Riyadh,SA,Riyadh,,,yes,,Urbanised area of Riyadh,,,UNVERIFIED - check against Euromonitor report
+77,montreal,Montreal,CA,Montréal,"Montréal, Québec",,,,,,,UNVERIFIED - check against Euromonitor report
+78,warsaw,Warsaw,PL,Warsaw,Warszawa,,,,,,,UNVERIFIED - check against Euromonitor report
+79,cancun,Cancún,MX,Cancún,"Benito Juárez, Quintana Roo",,yes,,Urbanised part of Benito Juárez municipality,,,UNVERIFIED - check against Euromonitor report
+80,buenos-aires,Buenos Aires,AR,Buenos Aires,Ciudad Autónoma de Buenos Aires,,,,,,,UNVERIFIED - check against Euromonitor report
+81,johor-bahru,Johor Bahru,MY,Johor Bahru,,,,,,,,UNVERIFIED - check against Euromonitor report
+82,heraklion,Heraklion,GR,Heraklion,Heraklion Municipality,,,,,,,UNVERIFIED - check against Euromonitor report
+83,bogota,Bogotá,CO,Bogotá,"Bogotá, Distrito Capital",,yes,,Urbanised part of the Capital District (excludes rural Sumapaz),,,UNVERIFIED - check against Euromonitor report
+84,lima,Lima,PE,Lima,Lima Metropolitana,,yes,,Urbanised part of Lima Province,,,UNVERIFIED - check against Euromonitor report
+85,edinburgh,Edinburgh,GB,Edinburgh,City of Edinburgh,,,,,,,UNVERIFIED - check against Euromonitor report
+86,nha-trang,Nha Trang,VN,Nha Trang,Khánh Hòa,,yes,,Nha Trang urban area,,,UNVERIFIED - check against Euromonitor report
+87,medina,Medina,SA,Medina,,,yes,,Urbanised area of Medina,,,UNVERIFIED - check against Euromonitor report
+88,santiago,Santiago,CL,Santiago,"Santiago, Región Metropolitana",,,,Santiago commune (city centre); turn on metro area for Greater Santiago,,,UNVERIFIED - check against Euromonitor report
+89,thessaloniki,Thessaloniki,GR,Thessaloniki,Thessaloniki Municipality,,,,,,,UNVERIFIED - check against Euromonitor report
+90,jakarta,Jakarta,ID,Jakarta,Daerah Khusus Ibukota Jakarta,,,,,,,UNVERIFIED - check against Euromonitor report
+91,mecca,Mecca,SA,Mecca,,,yes,,Urbanised area of Mecca,,,UNVERIFIED - check against Euromonitor report
+92,krakow,Kraków,PL,Kraków,"Kraków, Polska",,,,,,,UNVERIFIED - check against Euromonitor report
+93,punta-cana,Punta Cana,DO,Punta Cana,Verón-Punta Cana,,,,Verón-Punta Cana municipal district,,,UNVERIFIED - check against Euromonitor report
+94,tbilisi,Tbilisi,GE,Tbilisi,,,,,,,,UNVERIFIED - check against Euromonitor report
+95,marrakech,Marrakech,MA,Marrakesh,Marrakech,,,,,,,UNVERIFIED - check against Euromonitor report
+96,denpasar,Denpasar,ID,Denpasar,,,,,,,,UNVERIFIED - check against Euromonitor report
+97,cairo,Cairo,EG,Cairo,,,yes,,Urbanised part of Cairo Governorate,,,UNVERIFIED - check against Euromonitor report
+98,zhuhai,Zhuhai,CN,Zhuhai,,,yes,,Urbanised part of Zhuhai,,,UNVERIFIED - check against Euromonitor report
+99,vilnius,Vilnius,LT,Vilnius,,,,,,,,UNVERIFIED - check against Euromonitor report
+100,bodrum,Bodrum (Muğla),TR,Bodrum,"Bodrum, Muğla",,,,Euromonitor lists Muğla province; Bodrum district stands in as its best-known resort,,,UNVERIFIED - check against Euromonitor report
