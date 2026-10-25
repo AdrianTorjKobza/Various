@@ -18,14 +18,36 @@ export const hitLayers = (slot: Slot): string[] => [fillLayerId(slot), metroFill
 function slotLayers(slot: Slot): LayerSpecification[] {
   const source = sourceId(slot);
   const { fill, line } = SLOT_COLORS[slot];
-  const isMetro = ['==', ['get', 'kind'], 'metro'] as const;
-  const isCity = ['==', ['get', 'kind'], 'city'] as const;
   return [
-    { id: metroFillLayerId(slot), type: 'fill', source, filter: isMetro, paint: { 'fill-color': fill, 'fill-opacity': 0.08 } },
-    { id: metroLineLayerId(slot), type: 'line', source, filter: isMetro, paint: { 'line-color': line, 'line-width': 1.5, 'line-dasharray': [2, 2] } },
-    { id: fillLayerId(slot), type: 'fill', source, filter: isCity, paint: { 'fill-color': fill, 'fill-opacity': 0.3 } },
-    { id: lineLayerId(slot), type: 'line', source, filter: isCity, paint: { 'line-color': line, 'line-width': 2 } },
-  ] as LayerSpecification[];
+    {
+      id: metroFillLayerId(slot),
+      type: 'fill',
+      source,
+      filter: ['==', ['get', 'kind'], 'metro'],
+      paint: { 'fill-color': fill, 'fill-opacity': 0.08 },
+    },
+    {
+      id: metroLineLayerId(slot),
+      type: 'line',
+      source,
+      filter: ['==', ['get', 'kind'], 'metro'],
+      paint: { 'line-color': line, 'line-width': 1.5, 'line-dasharray': [2, 2] },
+    },
+    {
+      id: fillLayerId(slot),
+      type: 'fill',
+      source,
+      filter: ['==', ['get', 'kind'], 'city'],
+      paint: { 'fill-color': fill, 'fill-opacity': 0.3 },
+    },
+    {
+      id: lineLayerId(slot),
+      type: 'line',
+      source,
+      filter: ['==', ['get', 'kind'], 'city'],
+      paint: { 'line-color': line, 'line-width': 2 },
+    },
+  ];
 }
 
 /** Shapes on a plain background: no tiles, fonts or icons, so the map needs no third-party servers. */
