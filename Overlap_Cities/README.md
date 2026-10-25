@@ -1,6 +1,6 @@
 # Overlap Cities
 
-Drag one city over another to compare their **true size**: city limits or metro areas, for every city with 300,000+ inhabitants plus the world's top 100 city destinations.
+Drag one city over another to compare their **true size**: city limits or metro areas, for every city with 300,000+ inhabitants.
 
 Built with TypeScript, Vite and MapLibre GL. It's a static site, so there's no backend to run or secure.
 
