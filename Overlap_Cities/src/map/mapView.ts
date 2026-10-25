@@ -1,3 +1,4 @@
+import type { Feature, MultiPolygon as GeoJsonMultiPolygon, Position } from 'geojson';
 import { Map as MapLibreMap, NavigationControl, ScaleControl } from 'maplibre-gl';
 import type { GeoJSONSource, MapMouseEvent, MapTouchEvent, PointLike } from 'maplibre-gl';
 import { boundsOf, placeShape, translate } from '../domain/geo';
@@ -200,10 +201,10 @@ export class MapView implements MapRenderer {
   }
 }
 
-function feature(kind: 'city' | 'metro', geometry: MultiPolygon): GeoJSON.Feature<GeoJSON.MultiPolygon> {
+function feature(kind: 'city' | 'metro', geometry: MultiPolygon): Feature<GeoJsonMultiPolygon> {
   return {
     type: 'Feature',
     properties: { kind },
-    geometry: { type: 'MultiPolygon', coordinates: geometry as unknown as GeoJSON.Position[][][] },
+    geometry: { type: 'MultiPolygon', coordinates: geometry as unknown as Position[][][] },
   };
 }
