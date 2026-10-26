@@ -47,5 +47,11 @@ export class ComparisonPanel {
 
 function sentence(nameA: string, areaA: number, nameB: string, areaB: number, scope: string): HTMLElement {
   const [big, bigArea, small, smallArea] = areaA >= areaB ? [nameA, areaA, nameB, areaB] : [nameB, areaB, nameA, areaA];
+  const ratio = bigArea / smallArea;
+  if (ratio < 1.1) {
+    const percent = Math.round((ratio - 1) * 100);
+    const comparison = percent === 0 ? 'about the same size as' : `${percent}% larger than`;
+    return h('p', {}, [h('strong', { text: big }), ` is ${comparison} `, h('strong', { text: small }), ` (${scope})`]);
+  }
   return h('p', {}, [h('strong', { text: big }), ' is ', h('strong', { text: formatRatio(bigArea, smallArea) }), ' the size of ', h('strong', { text: small }), ` (${scope})`]);
 }
