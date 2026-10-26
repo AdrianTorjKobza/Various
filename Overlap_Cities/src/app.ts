@@ -86,7 +86,7 @@ export class App {
         this.map.fitToCities(FIT_PADDING);
       },
       onReset: () => {
-        this.dispatch((s) => actions.resetPositions(s, this.lookup));
+        this.dispatch((s) => actions.reset(s, this.lookup));
         this.map.fitToCities(FIT_PADDING);
       },
       onShare: () => void this.share(),
