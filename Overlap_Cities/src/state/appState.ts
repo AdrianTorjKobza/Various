@@ -83,6 +83,18 @@ export function resetPositions(state: AppState, lookup: CityLookup): AppState {
   return withSlot(withSlot(state, 'a', { centre }), 'b', { centre });
 }
 
+/** Reset button: positions, rotation and opacity back to their defaults for both cities. */
+export function reset(state: AppState, lookup: CityLookup): AppState {
+  const positioned = resetPositions(state, lookup);
+  return {
+    ...positioned,
+    slots: {
+      a: { ...positioned.slots.a, rotation: 0, opacity: DEFAULT_OPACITY.a },
+      b: { ...positioned.slots.b, rotation: 0, opacity: DEFAULT_OPACITY.b },
+    },
+  };
+}
+
 /** The overlay becomes the base city and vice versa. */
 export function swap(state: AppState, lookup: CityLookup): AppState {
   const swapped: AppState = {
