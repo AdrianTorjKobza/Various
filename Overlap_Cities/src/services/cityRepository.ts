@@ -17,7 +17,7 @@ export class StaticCityRepository implements CityDataSource {
   ) {}
 
   async loadIndex(): Promise<CitySummary[]> {
-    return parseCityIndex(await getJson(this.fetchFn, `${this.baseUrl}cities.json`));
+      return parseCityIndex(await getJson(this.fetchFn, `${this.baseUrl}cities.json`, 30_000));
   }
 
   loadBoundaries(id: string): Promise<CityBoundaries> {
