@@ -57,7 +57,7 @@ export class ControlsPanel {
         h('div', { class: 'chips', attrs: { role: 'group', 'aria-label': 'City to adjust' } }, [this.activeButtons.a, this.activeButtons.b]),
         this.rotation.input.closest('.slider-row') as HTMLElement,
         this.opacity.input.closest('.slider-row') as HTMLElement,
-        h('p', { class: 'hint', text: 'Tip: drag either city on the map. Tapping a city selects it here.' }),
+        h('p', { class: 'hint', text: 'Tip: drag either city. Tap a city to select it here.' }),
       ]),
       h('div', { class: 'actions' }, [button('Swap', events.onSwap), button('Reset', events.onReset), button('Share link', events.onShare, 'btn-primary')]),
     );
